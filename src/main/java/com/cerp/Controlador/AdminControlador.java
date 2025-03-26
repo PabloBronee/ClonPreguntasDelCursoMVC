@@ -63,7 +63,7 @@ public class AdminControlador implements ActionListener {
                 String opcionesString = vista.getOpcionesField().getText();
                 String correcta = vista.getCorrectaField().getText();
 
-                String[] opciones = opcionesString.split(",");
+                String[] opciones = opcionesString.split("/");
                 Pregunta nuevaPregunta = new Pregunta(modelo.size() + 1, pregunta, correcta, opciones);
 
                 this.modelo.add(nuevaPregunta);
